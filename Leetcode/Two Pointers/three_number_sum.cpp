@@ -30,6 +30,5 @@ vector<vector<int>> threeNumberSum(vector<int> array, int targetSum)
 int main()
 {
   vector<vector<int>> output = threeNumberSum({12, 3, 1, 2, -6, 5, -8, 6}, 0);
-  cout << output;
   return 0;
 }
