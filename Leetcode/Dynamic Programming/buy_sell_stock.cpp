@@ -15,7 +15,7 @@ public:
         min_price = i;
 
       else if (i - min_price > max_profit)
-        max_profit = i - min_price
+        max_profit = i - min_price;
     }
     return max_profit;
   }
