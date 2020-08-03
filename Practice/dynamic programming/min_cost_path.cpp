@@ -25,3 +25,38 @@ int minCostPath(int **input, int m, int n)
 {
   return minCostPath_helper(input, m, n, 0, 0);
 }
+
+//Memoization Solution
+int minCostPath_mem(int **input, int m, int n, int i, int j, int **output)
+{
+  //Base Case
+  if (i == m - 1 && j == n - 1)
+    return input[i][j];
+
+  if (i >= m || j >= n)
+    return INT_MAX;
+
+  //check if ans already exits
+  if (output[i][j] != -1)
+    return output[i][j];
+
+  //Recursive Calls
+  int x = minCostPath_mem(input, m, n, i, j + 1, output);
+  int y = minCostPath_mem(input, m, n, i + 1, j + 1, output);
+  int z = minCostPath_mem(input, m, n, i + 1, j, output);
+
+  //small calculation
+  int a = min(x, min(y, z)) + input[i][j];
+  output[i][j] = a;
+  return a;
+}
+
+int minCostPath_mem(int **input, int m, int n)
+{
+  int **output = new int *[m];
+  for (int i = 0; i < m; i++)
+    input[i] = new int[n];
+  memset(output, -1, sizeof(output));
+
+  return minCostPath_mem(input, m, n, 0, 0, output);
+}
