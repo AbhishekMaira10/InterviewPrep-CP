@@ -27,6 +27,8 @@ int minCostPath(int **input, int m, int n)
 }
 
 //Memoization Solution
+//time complexity - O(m*n) as there are m*n unique calls
+//space complexity - O(m*n)
 int minCostPath_mem(int **input, int m, int n, int i, int j, int **output)
 {
   //Base Case
@@ -59,4 +61,17 @@ int minCostPath_mem(int **input, int m, int n)
   memset(output, -1, sizeof(output));
 
   return minCostPath_mem(input, m, n, 0, 0, output);
+}
+
+// dp solution
+int minCostPath_dp(int **input, int m, int n)
+{
+  vector<vector<int>> output(n, vector<int>(m));
+
+  //Fil last cell
+  output[m - 1][n - 1] = input[m - 1][n - 1];
+
+  for(int i = m - 1; i >= 0; i--){
+    
+  }
 }
