@@ -55,10 +55,16 @@ void printTree(TreeNode<int>* root) {
 
 int numNodes(TreeNode<int>* root) {
     int count = 1;
-    for (int i = 0; i < root->children.size(); i++) {
+    for (int i = 0; i < root->children.size(); i++)
         count += numNodes(root->children[i]);
-    }
     return count;
+}
+
+int sumOfNodes(TreeNode<int>* root) {
+    int sum = root->data;
+    for (int i = 0; i < root->children.size(); i++)
+        sum += sumOfNodes(root->children[i]);
+    return sum;
 }
 
 int main() {
