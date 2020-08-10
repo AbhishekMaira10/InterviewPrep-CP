@@ -67,6 +67,20 @@ int sumOfNodes(TreeNode<int>* root) {
     return sum;
 }
 
+TreeNode<int>* maxDataNode(TreeNode<int>* root) {
+    if (root == NULL)
+        return root;
+    TreeNode<int>* max = root;
+    for (int i = 0; i < root->children.size(); i++) {
+        TreeNode<int>* max1 = maxDataNode(root->children[i]);
+        if (max1->data > max->data)
+            max = max1;
+    }
+    return max;
+}
+
+
+
 int main() {
     TreeNode<int>* root = takeInput();
     printTree(root);
