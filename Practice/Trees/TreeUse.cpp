@@ -164,6 +164,17 @@ void deleteTree(TreeNode<int>* root) {
     delete root;
 }
 
+bool containsX(TreeNode<int>* root, int x) {
+    if (root->data == x)
+        return true;
+    for (int i = 0; i < root->children.size(); i++) {
+        bool ans = containsX(root->children[i], x);
+        if (ans == true)
+            return true;
+    }
+    return false;
+}
+
 int main() {
     TreeNode<int>* root = takeInputLevelWise();
     printTreeLevelWise(root);
