@@ -98,6 +98,15 @@ void printAtLevelK(TreeNode<int>* root, int k) {
         printAtLevelK(root->children[i], k - 1);
 }
 
+int numLeafNodes(TreeNode<int>* root) {
+    int count = 0;
+    if (root->children.size() == 0)
+        count++;
+    for (int i = 0; i < root->children.size(); i++)
+        count += numLeafNodes(root->children[i]);
+    return count;
+}
+
 int main() {
     TreeNode<int>* root = takeInput();
     printTree(root);
