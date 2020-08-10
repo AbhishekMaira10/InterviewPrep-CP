@@ -53,7 +53,16 @@ void printTree(TreeNode<int>* root) {
     }
 }
 
+int numNodes(TreeNode<int>* root) {
+    int count = 1;
+    for (int i = 0; i < root->children.size(); i++) {
+        count += numNodes(root->children[i]);
+    }
+    return count;
+}
+
 int main() {
     TreeNode<int>* root = takeInput();
     printTree(root);
+    cout << numNodes(root);
 }
