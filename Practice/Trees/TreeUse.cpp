@@ -175,6 +175,15 @@ bool containsX(TreeNode<int>* root, int x) {
     return false;
 }
 
+int nodesGreaterThanX(TreeNode<int> *root, int x) {
+    int count = 0;
+    if (root->data > x)
+        count++;
+    for (int i = 0; i < root->children.size(); i++)
+        count += nodesGreaterThanX(root->children[i], x);
+    return count;
+}
+
 int main() {
     TreeNode<int>* root = takeInputLevelWise();
     printTreeLevelWise(root);
