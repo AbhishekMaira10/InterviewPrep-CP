@@ -184,6 +184,34 @@ int nodesGreaterThanX(TreeNode<int> *root, int x) {
     return count;
 }
 
+TreeNode<int>* maxSumNode(TreeNode<int> *root) {
+    TreeNode<int>* ans=root;
+    int sum=root->data;
+    for (int i=0;i<root->children.size();i++)
+    {
+        sum=sum+root->children[i]->data;
+    }
+    for (int i=0;i<root->children.size();i++)
+    {
+        TreeNode<int>* x;
+        x=maxSumNode(root->children[i]);
+        int xsum=x->data;
+        for (int j=0;j<x->children.size();j++)
+        {
+            xsum=xsum+x->children[j]->data;
+        }
+        if (xsum>sum)
+        {
+            sum=xsum;
+            ans=x;
+        }
+    }
+    return ans;
+}
+
+
+}
+
 int main() {
     TreeNode<int>* root = takeInputLevelWise();
     printTreeLevelWise(root);
