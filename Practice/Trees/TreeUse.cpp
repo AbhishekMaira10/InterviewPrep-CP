@@ -209,13 +209,28 @@ TreeNode<int>* maxSumNode(TreeNode<int> *root) {
     return ans;
 }
 
+TreeNode<int>* nextLargerElement(TreeNode<int> *root, int n) {
+    if (root == NULL)
+        return root;
 
+    TreeNode<int>* ans = NULL;
+    if (root->data > n)
+        ans = root;
+
+    for (int i=0;i<root->children.size();i++) {
+        TreeNode<int> *temp = nextLargerElement(root->children[i], n);
+        if (ans == NULL
+            ans = temp;
+        else if (temp != NULL && temp->data < ans->data)
+            ans = temp;
+    }
+    return ans;
 }
 
 int main() {
     TreeNode<int>* root = takeInputLevelWise();
-    printTreeLevelWise(root);
-    cout << numNodes(root);
+        printTreeLevelWise(root);
+        cout << numNodes(root);
     // deleteTree(root);
     delete root;
 }
