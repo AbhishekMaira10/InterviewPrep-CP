@@ -120,6 +120,14 @@ bool isNodePresent(BinaryTreeNode<int> *root, int x)
   return isNodePresent(root->left, x) || isNodePresent(root->right, x);
 }
 
+int height(BinaryTreeNode<int> *root)
+{
+  if (root == NULL)
+    return 0;
+
+  return 1 + max(height(root->left), height(root->right));
+}
+
 int main()
 {
   /*
