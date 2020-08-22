@@ -64,6 +64,43 @@ BinaryTreeNode<int> *takeInputLevelWise()
   }
 }
 
+BinaryTreeNode<int> *printBinaryTreeLevelWise(BinaryTreeNode<int> *root)
+{
+  if (root == NULL)
+    return;
+  queue<BinaryTreeNode<int> *> pendingNodes;
+  pendingNodes.push(root);
+
+  while (pendingNodes.size() != 0)
+  {
+    BinaryTreeNode<int> *front = pendingNodes.front();
+    pendingNodes.pop();
+    cout << front->data << ":";
+
+    if (front->left)
+    {
+      BinaryTreeNode<int> *child = front->left;
+      cout << "L:" << child->data << ",";
+      pendingNodes.push(child);
+    }
+    else
+      cout << "-1"
+           << ",";
+
+    if (front->right)
+    {
+      BinaryTreeNode<int> *child = front->right;
+      cout << "L:" << child->data << ",";
+      pendingNodes.push(child);
+    }
+    else
+      cout << "-1"
+           << ",";
+
+    cout << endl;
+  }
+}
+
 int main()
 {
   /*
