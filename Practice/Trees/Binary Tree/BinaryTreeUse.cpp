@@ -128,6 +128,21 @@ int height(BinaryTreeNode<int> *root)
   return 1 + max(height(root->left), height(root->right));
 }
 
+void mirrorBinaryTree(BinaryTreeNode<int> *root)
+{
+  if (root == NULL)
+    return;
+  if (root->left == NULL && root->right == NULL)
+    return;
+
+  mirrorBinaryTree(root->left);
+  mirrorBinaryTree(root->right);
+
+  BinaryTreeNode<int> *temp = root->left;
+  root->left = root->right;
+  root->right = temp;
+}
+
 int main()
 {
   /*
