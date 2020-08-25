@@ -143,6 +143,29 @@ void mirrorBinaryTree(BinaryTreeNode<int> *root)
   root->right = temp;
 }
 
+void inorderIterative(BinaryTreeNode<int> *root)
+{
+  stack<BinaryTreeNode<int> *> s;
+  BinaryTreeNode<int> *curr = root;
+
+  while (curr != NULL || s.empty() == false)
+  {
+
+    // Reach the leftmost node of the curr node
+    while (curr != NULL)
+    {
+      s.push(curr);
+      curr = curr->left;
+    }
+
+    curr = s.top();
+    cout << curr->data << " ";
+
+  //visiting the right subtree
+    curr = curr->right;
+  }
+}
+
 int main()
 {
   /*
