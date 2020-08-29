@@ -1,5 +1,5 @@
 # Interview Preparation
-My solutions to coding interview problems on LeetCode, AlgoExpert, IntervewBit, GeeksForGeeks, CodingNinjas, and other interview preparation resources. I will be adding my solutions to this repository every day starting August 26, 2020.
+My solutions to coding interview problems on LeetCode, AlgoExpert, IntervewBit, GeeksForGeeks, CodingNinjas, and other interview preparation resources. I will be adding my solutions to this repository every day starting August 29, 2020.
 
 __Difficulty Levels solved__
  
