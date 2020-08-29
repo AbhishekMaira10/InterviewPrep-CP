@@ -27,5 +27,5 @@ __Focus for today:__ Heaps/Priority Queues
 ## Day 0
 
 ### GeeksForGeeks
-1. :white_circle: [Minimum Number of Coins](Practice/dp/min_no_coins.cpp)
+1. :white_circle: [Minimum Number of Coins](Practice/dp/min_no_of_coins.cpp)
 
