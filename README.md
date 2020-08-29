@@ -20,10 +20,12 @@ __Focus for today:__ Heaps/Priority Queues
 * :white_circle: [5-longest-palindromic-substring.cpp](LeetCode/Arrays/deque.cpp)
 
 #### AlgoExpert
-* :white_circle: [bubble-sort.cpp](AlgoExpert/Dynamic Programming/max_adjacent_sum.cpp)
+* :white_circle: [bubble-sort.cpp](AlgoExpert/dp/min_no_of_coins.cpp)
 
  -->
 
 ## Day 0
-__Focus for today:__ Stacks/Queues
+
+### GeeksForGeeks
+1. :white_circle: [Minimum Number of Coins](Practice/dp/min_no_coins.cpp)
 
