@@ -3,13 +3,13 @@ My solutions to coding interview problems on LeetCode, AlgoExpert, IntervewBit, 
 
 __Difficulty Levels solved__
  
- :white_circle: Easy: 0  
- :large_blue_circle: Medium: 0  
+ :white_circle: Easy: 1  
+ :large_blue_circle: Medium: 1  
  :red_circle: Hard: 0  
  :black_circle: Very Hard: 0  
  :star: Good to review
 
- __Total:__ 0
+ __Total:__ 2
 
  <!-- Template for each day
 
@@ -28,4 +28,10 @@ __Focus for today:__ Heaps/Priority Queues
 
 ### GeeksForGeeks
 1. :white_circle: [Minimum Number of Coins](Practice/dp/min_no_of_coins.cpp)
+
+<!-- --------------------------------------------------------------------------------------------------------------------- -->
+## Day 1
+
+### GeeksForGeeks
+2. :large_blue_circle: :star: [Sliding Window Maximum](Practice/Array/sliding_window_maximum.cpp) _Hint: Use deque of size K._
 
