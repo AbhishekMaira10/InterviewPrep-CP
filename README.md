@@ -4,12 +4,12 @@ My solutions to coding interview problems on LeetCode, AlgoExpert, IntervewBit, 
 __Difficulty Levels solved__
  
  :white_circle: Easy: 2  
- :large_blue_circle: Medium: 1  
+ :large_blue_circle: Medium: 2  
  :red_circle: Hard: 0  
  :black_circle: Very Hard: 0  
  :star: Good to review
 
- __Total:__ 3
+ __Total:__ 4
 
  <!-- Template for each day
 
@@ -34,7 +34,8 @@ __Focus for today:__ Heaps/Priority Queues
 
 ### GeeksForGeeks
 2. :large_blue_circle: :star: [Sliding Window Maximum](Practice/Array/sliding_window_maximum.cpp) _Hint: Use deque of size K._
+3. :large_blue_circle: [No Three Consecutive characters](Practice/Strings/three_consecutive_string.cpp)
 
 ### LeetCode
-3. :white_circle: [Replace Question Mark](Leetcode/Strings/replace_question_mark.cpp)
+4. :white_circle: [Replace Question Mark](Leetcode/Strings/replace_question_mark.cpp)
 
