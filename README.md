@@ -39,3 +39,9 @@ __Focus for today:__ Heaps/Priority Queues
 ### LeetCode
 4. :white_circle: [Replace Question Mark](Leetcode/Strings/replace_question_mark.cpp)
 
+<!-- --------------------------------------------------------------------------------------------------------------------- -->
+## Day 2
+
+### GeeksForGeeks
+5. :white_circle: [Min Deletions For Unique Frequency](Practice/Strings/min_deletions_unique_freq.cpp) _Hint: Use a Priority Queue_
+
