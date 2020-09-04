@@ -3,13 +3,13 @@ My solutions to coding interview problems on LeetCode, AlgoExpert, IntervewBit, 
 
 __Difficulty Levels solved__
  
- :white_circle: Easy: 4  
+ :white_circle: Easy: 5  
  :large_blue_circle: Medium: 2  
  :red_circle: Hard: 0  
  :black_circle: Very Hard: 0  
  :star: Good to review
 
- __Total:__ 6
+ __Total:__ 7
 
  <!-- Template for each day
 
@@ -50,5 +50,5 @@ __Focus for today:__ Heaps/Priority Queues
 
 ### LeetCode
 6. :white_circle: [Contains Duplicate - I](leetcode/Arrays/contains_duplicate_1.cpp)
-
+7. :white_circle: [Contains Duplicate - II](leetcode/Arrays/contains_duplicate_2.cpp)
 
