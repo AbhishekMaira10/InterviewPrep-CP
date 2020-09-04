@@ -49,6 +49,6 @@ __Focus for today:__ Heaps/Priority Queues
 ## Day 3
 
 ### LeetCode
-6. :white_circle: [Contains Duplicate - I](leetcode/Arrays/contains_duplicate_1.cpp)
-7. :white_circle: [Contains Duplicate - II](leetcode/Arrays/contains_duplicate_2.cpp)
+6. :white_circle: [Contains Duplicate - I](Leetcode/Arrays/contains_duplicate_1.cpp)
+7. :white_circle: [Contains Duplicate - II](Leetcode/Arrays/contains_duplicate_2.cpp)
 
