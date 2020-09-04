@@ -3,13 +3,13 @@ My solutions to coding interview problems on LeetCode, AlgoExpert, IntervewBit, 
 
 __Difficulty Levels solved__
  
- :white_circle: Easy: 2  
+ :white_circle: Easy: 4  
  :large_blue_circle: Medium: 2  
  :red_circle: Hard: 0  
  :black_circle: Very Hard: 0  
  :star: Good to review
 
- __Total:__ 4
+ __Total:__ 6
 
  <!-- Template for each day
 
@@ -44,4 +44,11 @@ __Focus for today:__ Heaps/Priority Queues
 
 ### GeeksForGeeks
 5. :white_circle: [Min Deletions For Unique Frequency](Practice/Strings/min_deletions_unique_freq.cpp) _Hint: Use a Priority Queue_
+
+<!-- --------------------------------------------------------------------------------------------------------------------- -->
+## Day 3
+
+### LeetCode
+6. :white_circle: [Contains Duplicate - I](leetcode/Arrays/contains_duplicate_1.cpp)
+
 
