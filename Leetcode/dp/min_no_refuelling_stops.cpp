@@ -34,7 +34,7 @@ public:
       }
 
       //refuel at the best station so far
-      while (!passed_stations.empty())
+      if (!passed_stations.empty())
       {
         curr_fuel += passed_stations.top();
         passed_stations.pop();
