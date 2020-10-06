@@ -1,16 +1,9 @@
 #include <bits/stdc++.h>
+#include "Node.h"
 using namespace std;
-
-class Node
-{
-public:
-  int data;
-  Node *next;
-};
 
 void swapNodes(Node *head, int x, int y)
 {
-
   if (x == y)
     return;
 
