@@ -4,7 +4,7 @@ using namespace std;
 
 Node *midPoint(Node *head)
 {
-  if (head == NULL)
+  if (head == NULL || head->next == NULL)
     return head;
 
   Node *slow = head;
