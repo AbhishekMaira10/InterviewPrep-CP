@@ -1,9 +1,4 @@
-/* Question -
-https://leetcode.com/problems/merge-sorted-array/
-*/
-
 #include <bits/stdc++.h>
-#include <iostream>
 using namespace std;
 
 void merge(int arr1[], int n, int arr2[], int m, int arr3[])
